@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      id="theme-provider"
+      rel="stylesheet"
+      href="styles/dark-theme-vars.css"
+    />
   </head>
   <body>
     <main>
@@ -37,6 +42,7 @@
                 <a href="" rel="author" class="contact-info__item">
                   <div class="contact-info__item-icon-wrapper">
                     <svg
+                      class="contact-info__item-icon"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
                     >
@@ -57,6 +63,7 @@
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
+                      class="contact-info__item-icon"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
                     >
@@ -89,6 +96,7 @@
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
+                      class="contact-info__item-icon"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 496 512"
                     >
@@ -109,6 +117,7 @@
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
+                      class="contact-info__item-icon"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
                     >
@@ -321,12 +330,36 @@
                     </p>
                     <p class="additional-info__languages-item">English</p>
                   </div>
+
+                  <div class="additional-info__languages">
+                    <h3
+                      id="gratitude-header"
+                      class="additional-info__languages-header"
+                    >
+                      ❤️❤️❤️
+                    </h3>
+                    <p
+                      id="gratitude-body"
+                      class="additional-info__languages-item"
+                    >
+                      Thx for the Git/Github materials Binary Studio ❤️
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <h3
+            id="theme-switcher"
+            class="skills__header"
+            style="cursor: pointer"
+          >
+            Dark Mode
+          </h3>
         </div>
       </div>
     </main>
+
+    <script src="js/theme-provider-handler.js"></script>
   </body>
 </html>
