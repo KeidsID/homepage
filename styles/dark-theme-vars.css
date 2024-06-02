@@ -1,0 +1,15 @@
+body {
+  background-color: #2D3250;
+
+  --primary-text-color: #afbbff;
+  --secondary-text-color: #8c96cc;
+  --durability-text-color: #7881af;
+  --icon-color: #929dd5;
+  --border-color: #9b6f4c;
+  --text-decoration-color: #F6B17A;
+}
+
+.resume {
+  border: 1px solid #282c47;
+  box-shadow: 1px 1px 7px 7px #282c47;
+}
