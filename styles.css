@@ -49,6 +49,8 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  /* applied when screen < 576px */
+
   .main-info,
   .contact_info_container {
     flex-direction: column;
@@ -62,8 +64,19 @@ body {
     margin-bottom: 20px;
   }
 
+  /* .contact-info__block--expanded--align-end {
+    align-items: start;
+  } */
+
   .experiences {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* applied when screen > 576px */
+  .cross-align-end-on-wide {
+    align-items: end;
   }
 }
 
@@ -87,10 +100,14 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.contact-info__block--expanded {
+  flex: 1;
 }
 
 .contact-info__block--center {
+  margin: 0 24px;
   justify-content: center;
 }
 
